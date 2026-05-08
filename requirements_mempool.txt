@@ -1,0 +1,6 @@
+# mempool monitor requirements
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+web3==6.18.0
+websockets==12.0
+python-dotenv==1.0.1
