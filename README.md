@@ -1,8 +1,7 @@
 # MEMPOOL.WATCH
 > Live Ethereum mempool monitor with real-time threat detection dashboard.
 
-![Dashboard](assets/dashboard-all.png)
-![High Risk Filter](assets/dashboard-high.png)
+
 
 ## Features
 - Live pending transaction stream
