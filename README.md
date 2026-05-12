@@ -1,15 +1,33 @@
 # MEMPOOL.WATCH
-> Live Ethereum mempool monitor with real-time threat detection dashboard.
+> Real-time blockchain mempool monitor with threat detection.
+> Built for security researchers, wallet teams, and DeFi protocols.
 
+## The Problem
+Every day, millions of dollars are lost to wallet drainers, 
+sandwich attacks, and suspicious high-value transfers — 
+often visible in the mempool *before* they confirm.
+MEMPOOL.WATCH surfaces these threats in real time.
 
-
-## Features
-- Live pending transaction stream
+## Live Features (Ethereum — Solana expansion in progress)
+- Live pending transaction stream via Alchemy RPC
 - HIGH VALUE alerts (> 10 ETH transfers)
 - Token drainer signature detection
+- MEV / sandwich attack pattern flagging  ← add this
 - Gas price history chart
-- Risk breakdown (Critical / High / Medium / Low)
+- Risk tiers: Critical / High / Medium / Low
 - Filters: ALL / CRITICAL / HIGH / DRAINER
+
+## Roadmap
+- [ ] Solana mempool integration (Alchemy RPC)
+- [ ] Webhook alerts (Telegram / Discord bot)
+- [ ] Public API for wallet apps to query risk scores
+- [ ] MEV bundle detection
+
+## Stack
+- Python + FastAPI + WebSockets
+- Web3.py / Solana-py
+- SQLite (persistent storage)
+- Vanilla JS — zero framework overhead
 
 ## Setup
 ```bash
